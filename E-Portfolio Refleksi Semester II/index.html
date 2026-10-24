@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Refleksi Pengalaman Belajar Mata Kuliah Semester II | Syarif Hidayatullah</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="ulm.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ulm.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-ppg {
+      height: 35px;
+      width: auto;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #0f2b3d, #1e4a6e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+    }
+
+    .logo span {
+      color: #2c7da0;
+      background: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.3rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #1e293b;
+      transition: 0.2s;
+      font-size: 0.82rem;
+      padding: 4px 0;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #2c7da0;
+      border-bottom: 2px solid #2c7da0;
+    }
+
+    .mobile-menu {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #f1f5f9 0%, #e6edf4 100%);
+      padding: 4rem 0 3rem;
+      border-bottom: 1px solid #e0e7ef;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-badge {
+      background: #d9eaf5;
+      color: #155a7b;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-badge img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #0c4a6e;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #334155;
+      max-width: 90%;
+      margin-bottom: 1.8rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      border: none;
+      font-size: 0.9rem;
+    }
+
+    .btn-primary {
+      background: #1e4a6e;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-primary:hover {
+      background: #0f3b58;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1.5px solid #2c7da0;
+      color: #2c7da0;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: #eef4ff;
+      border-color: #1e4a6e;
+      color: #1e4a6e;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rounded-img-wrapper {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+      border: 4px solid white;
+      background: #e2ebf3;
+    }
+
+    .rounded-profile-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .page-section {
+      padding: 4rem 0;
+      min-height: 70vh;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0c4a6e;
+    }
+
+    .section-title p {
+      color: #475569;
+      max-width: 650px;
+      margin: 0.5rem auto 0;
+    }
+
+    /* ===== INFO CARDS (LPTK & SEKOLAH PPL) ===== */
+    .info-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      margin: 2rem 0 3rem 0;
+      justify-content: center;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.05);
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+      border: 1px solid #e9eef3;
+      transition: all 0.2s;
+    }
+
+    .info-card:hover {
+      transform: translateY(-4px);
+      border-color: #bdd9e8;
+    }
+
+    .info-card>i {
+      font-size: 2rem;
+      color: #2c7da0;
+      margin-bottom: 0.8rem;
+    }
+
+    .info-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      color: #0c4a6e;
+    }
+
+    .info-card p {
+      color: #475569;
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+      text-align: justify;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 0.5rem;
+    }
+
+    .slider-images {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      z-index: 10;
+      transition: 0.2s;
+    }
+
+    .slider-btn:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .slider-btn.prev {
+      left: 6px;
+    }
+
+    .slider-btn.next {
+      right: 6px;
+    }
+
+    .slider-dots {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 10;
+    }
+
+    .slider-dots span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .slider-dots span.active {
+      background: white;
+      transform: scale(1.2);
+    }
+
+    /* ===== KOMPONEN CARD ===== */
+    .komponen-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1rem;
+    }
+
+    .komponen-card {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem 1.5rem;
+      border: 1px solid #e9eef3;
+      transition: 0.3s;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      cursor: pointer;
+    }
+
+    .komponen-card:hover {
+      transform: translateY(-8px);
+      border-color: #bdd9e8;
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+    }
+
+    .komponen-icon {
+      width: 70px;
+      height: 70px;
+      background: #eef2f6;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+
+    .komponen-icon i {
+      font-size: 2rem;
+      color: #1e4a6e;
+    }
+
+    .komponen-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #0c4a6e;
+    }
+
+    .komponen-card p {
+      font-size: 0.88rem;
+      color: #475569;
+      margin-bottom: 1rem;
+    }
+
+    .komponen-card .btn-link {
+      font-weight: 600;
+      color: #1e4a6e;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tag {
+      background: #e6f0f9;
+      color: #155a7b;
+      border-radius: 30px;
+      padding: 4px 12px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 6px;
+      margin-top: 10px;
+    }
+
+    .quote {
+      background: #ffffffd9;
+      border-left: 6px solid #2c7da0;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 24px;
+    }
+
+    .stats {
+      background: #eef3fa;
+      border-radius: 2rem;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .stat-item h4 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #155a7b;
+    }
+
+    footer {
+      background: #0f2b3d;
+      color: #cbd5e6;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #90cdf4;
+      text-decoration: none;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active-page {
+      display: block;
+    }
+
+    /* ===== MATKUL CARD ===== */
+    .matkul-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      margin-bottom: 24px;
+      overflow: hidden;
+      border: 1px solid #e9eef3;
+    }
+
+    .matkul-header {
+      background: linear-gradient(135deg, #1e4a6e 0%, #2c7da0 100%);
+      color: #fff;
+      padding: 20px 25px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s;
+    }
+
+    .matkul-header:hover {
+      filter: brightness(1.08);
+    }
+
+    .matkul-header h3 {
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+    }
+
+    .matkul-header .icon {
+      background: rgba(255, 255, 255, 0.22);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .toggle-icon {
+      font-size: 1.3rem;
+      transition: transform 0.3s;
+    }
+
+    .matkul-header.collapsed .toggle-icon {
+      transform: rotate(-90deg);
+    }
+
+    .matkul-body {
+      padding: 25px 30px;
+      transition: max-height 0.4s ease, opacity 0.3s ease;
+      overflow: hidden;
+      max-height: 40000px;
+      opacity: 1;
+    }
+
+    .matkul-body.hidden {
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: 0;
+    }
+
+    .section-block {
+      margin-bottom: 22px;
+    }
+
+    .section-title-block {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1e4a6e;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e2e8f0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ===== GRID 4C (2x2) ===== */
+    .grid-4c {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .box-4c {
+      background: linear-gradient(135deg, #f0f7fc 0%, #e6f0f9 100%);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      border: 1px solid #d0e3f0;
+      border-left: 5px solid #2c7da0;
+      transition: 0.2s;
+    }
+
+    .box-4c:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(44, 125, 160, 0.12);
+      border-left-color: #1e4a6e;
+    }
+
+    .box-4c .box-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #1e4a6e;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 0.6rem;
+    }
+
+    .box-4c .box-head i {
+      background: #1e4a6e;
+      color: white;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+    }
+
+    .box-4c .box-text {
+      font-size: 0.82rem;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    /* ===== GRID ARTEFAK (3 kolom) ===== */
+    .grid-artefak {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .box-artefak {
+      background: linear-gradient(135deg, #f0fff4 0%, #e6f9ee 100%);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      border: 1px solid #c6f0d5;
+      border-left: 5px solid #48bb78;
+      transition: 0.2s;
+    }
+
+    .box-artefak:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(72, 187, 120, 0.12);
+      border-left-color: #2f855a;
+    }
+
+    .box-artefak .box-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #2f855a;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 0.6rem;
+    }
+
+    .box-artefak .box-head i {
+      background: #48bb78;
+      color: white;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+    }
+
+    .box-artefak .box-text {
+      font-size: 0.82rem;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    /* ===== PDF BLOCK ===== */
+    .pdf-block {
+      background: #f1f5f9;
+      border-radius: 16px;
+      padding: 1.2rem;
+      margin-top: 1.2rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #e2edf2;
+    }
+
+    .pdf-block-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1e4a6e;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pdf-embed-wrapper {
+      width: 100%;
+      height: 700px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+      background: white;
+      margin-bottom: 0.8rem;
+    }
+
+    .pdf-embed-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .pdf-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .pdf-btn {
+      background: #1e4a6e;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .pdf-btn:hover {
+      background: #0f3b58;
+      transform: translateY(-2px);
+    }
+
+    .pdf-btn-outline {
+      background: transparent;
+      border: 1.5px solid #2c7da0;
+      color: #2c7da0;
+    }
+
+    .pdf-btn-outline:hover {
+      background: #eef4ff;
+      color: #1e4a6e;
+    }
+
+    /* ===== PROFIL ===== */
+    .profil-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .profil-photo {
+      flex: 0 0 220px;
+      text-align: center;
+    }
+
+    .profil-photo-inner {
+      background: #dce7f0;
+      border-radius: 32px;
+      padding: 0.8rem;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+    .profil-photo img {
+      width: 100%;
+      border-radius: 28px;
+      display: block;
+    }
+
+    .profil-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .profil-text p {
+      font-size: 0.98rem;
+      text-align: justify;
+      line-height: 1.85;
+      color: #1e293b;
+      margin-bottom: 1rem;
+    }
+
+    .riwayat-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .riwayat-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid #eef2f6;
+      font-size: 0.9rem;
+    }
+
+    .riwayat-list li:last-child {
+      border-bottom: none;
+    }
+
+    .riwayat-list .badge-edu {
+      background: #1e4a6e;
+      color: white;
+      padding: 2px 12px;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      min-width: 55px;
+      text-align: center;
+    }
+
+    .keunikan-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .keunikan-item {
+      background: #f1f5f9;
+      border-radius: 14px;
+      padding: 1rem;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .keunikan-item:hover {
+      background: #e2edf2;
+      transform: translateY(-3px);
+    }
+
+    .keunikan-item i {
+      font-size: 1.6rem;
+      color: #1e4a6e;
+      margin-bottom: 0.3rem;
+    }
+
+    .keunikan-item h4 {
+      font-size: 0.92rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .keunikan-item p {
+      font-size: 0.78rem;
+      color: #475569;
+    }
+
+    /* ===== VISI MISI ===== */
+    .visi-box {
+      background: linear-gradient(135deg, #1e4a6e 0%, #2c7da0 100%);
+      color: white;
+      border-radius: 24px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .visi-box h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .visi-box p {
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.8;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .misi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .misi-item {
+      background: white;
+      border-radius: 18px;
+      padding: 1.3rem;
+      border: 1px solid #e2edf2;
+      border-left: 5px solid #2c7da0;
+      transition: 0.2s;
+    }
+
+    .misi-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .misi-item .misi-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: #1e4a6e;
+      color: white;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .misi-item h4 {
+      color: #0c4a6e;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .misi-item p {
+      font-size: 0.85rem;
+      color: #475569;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+        gap: 0.8rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding-left: 24px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 6px 0;
+        border-bottom: 1px solid #eef2f6;
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        max-width: 100%;
+      }
+
+      .hero-grid {
+        flex-direction: column-reverse;
+      }
+
+      .stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .logo-ppg {
+        height: 28px;
+      }
+
+      .logo {
+        font-size: 1rem;
+      }
+
+      .komponen-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .rounded-img-wrapper {
+        width: 200px;
+        height: 200px;
+      }
+
+      .stat-item {
+        flex: 0 0 45%;
+      }
+
+      .stat-item h4 {
+        font-size: 1.5rem;
+      }
+
+      .matkul-body {
+        padding: 18px 15px;
+      }
+
+      .matkul-header h3 {
+        font-size: 0.92rem;
+      }
+
+      .pdf-embed-wrapper {
+        height: 450px;
+      }
+
+      .info-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-card {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h1 {
+        font-size: 1.7rem !important;
+      }
+
+      .section-title h2 {
+        font-size: 1.8rem !important;
+      }
+
+      .profil-photo {
+        flex: 1 1 100%;
+      }
+
+      .profil-text {
+        min-width: 100%;
+      }
+
+      .misi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pdf-embed-wrapper {
+        height: 400px;
+      }
+
+      .pdf-actions {
+        flex-direction: column;
+      }
+
+      .pdf-btn {
+        justify-content: center;
+      }
+
+      .grid-4c {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-artefak {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-container">
+      <div class="logo-wrapper">
+        <img src="tutwuri.webp" alt="Logo Tut Wuri Handayani" class="logo-ppg" onerror="this.style.display='none'">
+        <img src="ulm.png" alt="Logo ULM" class="logo-ppg" onerror="this.style.display='none'">
+        <!-- <img src="diktisaintekberdampak.png" alt="Logo Diktisaintek Berdampak" class="logo-ppg"
+          onerror="this.style.display='none'"> -->
+        <img src="cagur.png" alt="Logo PPG" class="logo-ppg" onerror="this.style.display='none'">
+        <div class="logo">Seminar PPG | <span>Refleksi Semester II</span></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" data-page="home" class="active">Beranda</a></li>
+        <li><a href="#" data-page="identitas">Identifikasi Diri</a></li>
+        <li><a href="#" data-page="refleksi">Refleksi 5 Matkul</a></li>
+        <li><a href="#" data-page="kontak">Kontak</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobileMenu"><i class="fas fa-bars"></i></div>
+    </div>
+  </div>
+
+  <!-- ============ PAGE: HOME ============ -->
+  <div id="page-home" class="page active-page">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <img src="tutwuri.webp" alt="Logo Tut Wuri Handayani" class="logo-ppg" onerror="this.style.display='none'">
+            <img src="ulm.png" alt="Logo ULM" class="logo-ppg" onerror="this.style.display='none'">
+            <img src="cagur.png" alt="PPG" onerror="this.style.display='none'">
+            PPG Calon Guru 2026 | ULM Banjarmasin
+          </div>
+          <h1>Refleksi Pengalaman Belajar<br>Mata Kuliah Semester II PPG Cagur 2026</h1>
+          <p>"Melanjutkan perjalanan sebagai calon guru profesional. Di semester ini, saya mendalami praktik mengajar
+            mandiri, projek kepemimpinan, dan inovasi pembelajaran berbasis kearifan lokal lahan basah."</p>
+          <div class="btn-group">
+            <a href="#" data-page="identitas" class="btn btn-primary page-link"><i class="fas fa-user-graduate"></i>
+              Identifikasi Diri</a>
+            <a href="#" data-page="refleksi" class="btn btn-outline page-link"><i class="fas fa-book-open"></i> Lihat
+              Refleksi</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="rounded-img-wrapper">
+            <img src="_MG_0514.JPG" alt="Syarif Hidayatullah" class="rounded-profile-img"
+              onerror="this.src='https://placehold.co/400x400/1e4a6e/white?text=Syarif'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- KARTU LPTK & SEKOLAH PPL -->
+      <div class="info-cards">
+        <!-- KARTU LPTK ULM -->
+        <div class="info-card">
+          <i class="fas fa-university"></i>
+          <h3>LPTK – ULM Banjarmasin</h3>
+          <p>Universitas Lambung Mangkurat, LPTK unggul dalam mencetak guru profesional berbasis IPTEKS dan kearifan
+            lokal lahan basah. Akreditasi Unggul.</p>
+          <div class="slider-container" id="sliderLptk">
+            <div class="slider-images">
+              <img src="ulm2.jpg" alt="ULM Banjarmasin 1"
+                onerror="this.src='https://placehold.co/800x400/1e4a6e/white?text=ULM+Banjarmasin+1'">
+              <img src="fkip.png" alt="ULM Banjarmasin 2"
+                onerror="this.src='https://placehold.co/800x400/2c5f8a/white?text=ULM+Banjarmasin+2'">
+            </div>
+            <button class="slider-btn prev" onclick="slideLptk(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" onclick="slideLptk(1)"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="dotsLptk">
+              <span class="active" onclick="goToSlideLptk(0)"></span>
+              <span onclick="goToSlideLptk(1)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- KARTU SEKOLAH PPL -->
+        <div class="info-card">
+          <i class="fas fa-school"></i>
+          <h3>Sekolah PPL – SMK Negeri 4 Banjarmasin</h3>
+          <p>Sekolah mitra pelaksanaan PPL Mandiri. SMK Negeri 4 Banjarmasin dikenal sebagai pusat keunggulan bidang
+            teknologi dan kejuruan.</p>
+          <div class="slider-container" id="sliderSekolah">
+            <div class="slider-images">
+              <img src="smk41.jpg" alt="SMKN 4 Banjarmasin 1"
+                onerror="this.src='https://placehold.co/800x400/1e4a6e/white?text=SMKN+4+Banjarmasin+1'">
+              <img src="smk4.jpg" alt="SMKN 4 Banjarmasin 2"
+                onerror="this.src='https://placehold.co/800x400/2c5f8a/white?text=SMKN+4+Banjarmasin+2'">
+            </div>
+            <button class="slider-btn prev" onclick="slideSekolah(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" onclick="slideSekolah(1)"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="dotsSekolah">
+              <span class="active" onclick="goToSlideSekolah(0)"></span>
+              <span onclick="goToSlideSekolah(1)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top: 1rem;">
+        <h2>Komponen E-Portfolio</h2>
+        <p>Telusuri setiap bagian untuk melihat identitas dan refleksi pengalaman belajar saya.</p>
+      </div>
+
+      <div class="komponen-grid">
+        <a href="#" data-page="identitas" class="komponen-card page-link">
+          <div class="komponen-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Identifikasi Diri</h3>
+          <p>Profil, visi misi, dan nilai-nilai yang saya pegang sebagai calon guru Informatika profesional.</p>
+          <span class="btn-link">Selengkapnya <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="#" data-page="refleksi" class="komponen-card page-link">
+          <div class="komponen-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Refleksi 5 Mata Kuliah</h3>
+          <p>Refleksi 4C dalam kotak visual, PDF refleksi, dan analisis artefak dari 5 mata kuliah semester II.</p>
+          <span class="btn-link">Selengkapnya <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="#" data-page="kontak" class="komponen-card page-link">
+          <div class="komponen-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Kontak</h3>
+          <p>Hubungi saya untuk kolaborasi, diskusi, atau berbagi praktik baik seputar pendidikan dan Informatika.</p>
+          <span class="btn-link">Selengkapnya <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+
+      <div class="stats" style="margin-top: 2rem;">
+        <div class="stat-item">
+          <h4>5</h4><span>Mata Kuliah</span>
+        </div>
+        <div class="stat-item">
+          <h4>20</h4><span>Refleksi 4C</span>
+        </div>
+        <div class="stat-item">
+          <h4>5</h4><span>PDF Refleksi</span>
+        </div>
+        <div class="stat-item">
+          <h4>6</h4><span>PDF Artefak</span>
+        </div>
+      </div>
+
+      <div
+        style="margin-top: 1.2rem; background: white; border-radius: 16px; padding: 1.2rem; text-align: center; border: 1px solid #e9eef3;">
+        <i class="fas fa-quote-left" style="color: #1e4a6e; font-size: 1.5rem; opacity: 0.5;"></i>
+        <p style="font-size: 1.05rem; font-style: italic; color: #0c4a6e; max-width: 600px; margin: 0.3rem auto;">
+          "Setiap orang menjadi guru, setiap rumah menjadi sekolah."
+        </p>
+        <p style="font-weight: 600; color: #1e4a6e;">— Ki Hadjar Dewantara</p>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+  <!-- ============ PAGE: IDENTITAS DIRI ============ -->
+  <div id="page-identitas" class="page">
+    <div
+      style="background: linear-gradient(120deg, #f1f5f9 0%, #e6edf4 100%); padding: 3.5rem 0; border-bottom: 1px solid #e0e7ef;">
+      <div class="container" style="text-align: center;">
+        <h1 style="font-size: 2.6rem; font-weight: 800; color: #0c4a6e; margin-bottom: 0.5rem;">Identifikasi Diri</h1>
+        <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto;">Mengenal lebih dekat calon guru
+          yang adaptif, reflektif, dan berkomitmen pada pendidikan berkualitas.</p>
+        <div style="margin-top: 1.2rem;">
+          <a href="#" data-page="home" class="btn btn-outline page-link" style="font-size: 0.85rem;"><i
+              class="fas fa-home"></i> Kembali ke Beranda</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="page-section" style="background: white; padding-top: 2rem;">
+      <div class="container">
+        <div class="profil-grid">
+          <div class="profil-photo">
+            <div class="profil-photo-inner">
+              <img src="profil.JPG" alt="Foto Syarif"
+                onerror="this.src='https://placehold.co/400x400/1e4a6e/white?text=Syarif'">
+            </div>
+          </div>
+          <div class="profil-text">
+            <p><strong>Syarif Hidayatullah</strong>, lahir dan besar di <strong>Abung Wirajaya, Kecamatan Limpasu,
+                Kabupaten Hulu Sungai Tengah, Kalimantan Selatan</strong> — sebuah daerah yang menyimpan pesona alam
+              perbukitan yang menghijau, udara pegunungan yang segar, dan hamparan sawah yang membentang luas.
+              Masyarakat di sana dikenal dengan kearifan lokal yang kuat, hidup dalam ikatan kekeluargaan yang erat,
+              serta menjunjung tinggi nilai-nilai religius dan semangat gotong royong yang diwariskan secara
+              turun-temurun.</p>
+            <p>Sejak kecil, saya dibesarkan dalam lingkungan yang sederhana namun kaya akan nilai-nilai kehidupan, di
+              mana setiap warga saling membantu dan menghargai satu sama lain dalam suka maupun duka. Latar belakang
+              inilah yang membentuk karakter saya sebagai pribadi yang adaptif, reflektif, dan peduli terhadap sesama —
+              nilai-nilai yang saya bawa dalam perjalanan menjadi calon guru Informatika.</p>
+            <div class="quote" style="margin: 1rem 0;">
+              <i class="fas fa-quote-left" style="color:#2c7da0; margin-right: 10px;"></i>
+              "Guru bukan hanya pengajar, tetapi pembentuk masa depan."
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2.5rem;">
+          <h4 style="color: #0c4a6e; margin-bottom: 0.8rem;"><i class="fas fa-graduation-cap"></i> Riwayat Pendidikan
+          </h4>
+          <ul class="riwayat-list" style="max-width: 700px;">
+            <li><span class="badge-edu">SD</span> SDN Hawang, Hulu Sungai Tengah</li>
+            <li><span class="badge-edu">MTS</span> MTsN 2 Batang Alai Selatan, Hulu Sungai Tengah</li>
+            <li><span class="badge-edu">SMA</span> SMAN 3 Barabai, Hulu Sungai Tengah</li>
+            <li><span class="badge-edu">S1</span> Pendidikan Ilmu Komputer, Universitas Lambung Mangkurat</li>
+          </ul>
+        </div>
+
+        <h4 style="margin-top: 2rem; color: #0c4a6e;"><i class="fas fa-map-pin"></i> Keunikan Daerah Hulu Sungai Tengah
+        </h4>
+        <div class="keunikan-grid">
+          <div class="keunikan-item"><i class="fas fa-utensils"></i>
+            <h4>Kuliner</h4>
+            <p>Apam Barabai, Lamang, Kue Lam</p>
+          </div>
+          <div class="keunikan-item"><i class="fas fa-theater-masks"></i>
+            <h4>Budaya</h4>
+            <p>Batumbang Apam, Aruh Adat, Tari Surung Apam, Musik Panting</p>
+          </div>
+          <div class="keunikan-item"><i class="fas fa-mountain"></i>
+            <h4>Tempat Ikonik</h4>
+            <p>Tugu Burung Anggang, Riam Bajandik & Pulau Mas, Manggasang</p>
+          </div>
+          <div class="keunikan-item"><i class="fas fa-handshake"></i>
+            <h4>Kearifan</h4>
+            <p>Huma Betang, Semangat Gotong Royong, Mufakat & Religius</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2.5rem;">
+          <h4 style="color: #0c4a6e; margin-bottom: 1rem;"><i class="fas fa-eye"></i> Visi Sebagai Calon Guru</h4>
+          <div class="visi-box">
+            <h3><i class="fas fa-star"></i> Visi</h3>
+            <p>"Menjadi pendidik Informatika yang profesional, adaptif, dan inspiratif — mampu membimbing peserta didik
+              menguasai teknologi digital secara bijak, berkarakter, dan berdaya saing, serta berkontribusi nyata dalam
+              mewujudkan pendidikan Indonesia yang merata, bermakna, dan berlandaskan nilai-nilai Pancasila."</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <h4 style="color: #0c4a6e; margin-bottom: 1rem;"><i class="fas fa-bullseye"></i> Misi Sebagai Calon Guru</h4>
+          <div class="misi-grid">
+            <div class="misi-item">
+              <div class="misi-num">1</div>
+              <h4>Pembelajaran Bermakna</h4>
+              <p>Merancang pembelajaran Informatika yang kontekstual, berpusat pada murid, dan mengintegrasikan
+                teknologi dengan kebutuhan nyata peserta didik.</p>
+            </div>
+            <div class="misi-item">
+              <div class="misi-num">2</div>
+              <h4>Diferensiasi & Scaffolding</h4>
+              <p>Menerapkan pembelajaran berdiferensiasi berbasis pemetaan ZPD dan scaffolding bertahap agar setiap
+                murid berkembang sesuai kemampuannya.</p>
+            </div>
+            <div class="misi-item">
+              <div class="misi-num">3</div>
+              <h4>Karakter & Nilai Pancasila</h4>
+              <p>Menanamkan nilai kejujuran, tanggung jawab, gotong royong, dan keadilan sosial dalam setiap kegiatan
+                pembelajaran.</p>
+            </div>
+            <div class="misi-item">
+              <div class="misi-num">4</div>
+              <h4>Growth Mindset</h4>
+              <p>Membangun kelas yang mendorong pola pikir bertumbuh, menormalisasi kesalahan sebagai bagian dari
+                belajar, dan menguatkan 'The Power of Yet'.</p>
+            </div>
+            <div class="misi-item">
+              <div class="misi-num">5</div>
+              <h4>Kolaborasi Tri Pusat Pendidikan</h4>
+              <p>Membangun komunikasi aktif dengan keluarga dan masyarakat sebagai bagian dari ekosistem pendidikan yang
+                mendukung tumbuh kembang murid.</p>
+            </div>
+            <div class="misi-item">
+              <div class="misi-num">6</div>
+              <h4>Refleksi Berkelanjutan</h4>
+              <p>Terus belajar, berefleksi, dan beradaptasi melalui inkuiri kolaboratif bersama rekan sejawat, guru
+                pamong, dan dosen pembimbing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 2.5rem; background: #f1f5f9; border-radius: 24px; padding: 2rem; border-left: 6px solid #1e4a6e;">
+          <h3 style="color: #0c4a6e; font-size: 1.4rem; margin-bottom: 0.8rem;"><i class="fas fa-heart"></i> Nilai yang
+            Saya Pegang</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem;">
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-hand-holding-heart"></i>
+              Empati</span>
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-balance-scale"></i>
+              Keadilan Sosial</span>
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-seedling"></i> Growth
+              Mindset</span>
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-handshake"></i> Gotong
+              Royong</span>
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-lightbulb"></i>
+              Reflektif</span>
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-shield-alt"></i>
+              Integritas</span>
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-users"></i>
+              Kolaboratif</span>
+            <span class="tag" style="font-size: 0.8rem; padding: 8px 18px;"><i class="fas fa-laptop-code"></i> Adaptif
+              Teknologi</span>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 2rem; background: #e4f0f8; border-radius: 24px; padding: 2rem; text-align: center; border-left: 6px solid #1e4a6e;">
+          <i class="fas fa-quote-left" style="color: #1e4a6e; font-size: 2rem; opacity: 0.5;"></i>
+          <p
+            style="font-size: 1.1rem; font-style: italic; color: #0c4a6e; max-width: 700px; margin: 0.5rem auto; line-height: 1.8;">
+            "Pendidikan adalah daya upaya untuk memajukan bertumbuhnya budi pekerti, pikiran, dan tubuh anak."
+          </p>
+          <p style="font-weight: 600; color: #1e4a6e;">— Ki Hadjar Dewantara</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ PAGE: REFLEKSI ============ -->
+  <div id="page-refleksi" class="page">
+    <div
+      style="background: linear-gradient(120deg, #f1f5f9 0%, #e6edf4 100%); padding: 3.5rem 0; border-bottom: 1px solid #e0e7ef;">
+      <div class="container" style="text-align: center;">
+        <h1 style="font-size: 2.6rem; font-weight: 800; color: #0c4a6e; margin-bottom: 0.5rem;">Refleksi Pengalaman
+          Belajar Mata Kuliah Semester II</h1>
+        <p style="font-size: 1.05rem; color: #475569; max-width: 700px; margin: 0 auto;">Refleksi 4C, PDF refleksi, dan
+          analisis artefak dari 5 mata kuliah semester II.</p>
+        <div style="margin-top: 1.2rem;">
+          <a href="#" data-page="home" class="btn btn-outline page-link" style="font-size: 0.85rem;"><i
+              class="fas fa-home"></i> Kembali ke Beranda</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="page-section" style="background: #f9fdfe; padding-top: 2rem;">
+      <div class="container">
+
+        <!-- ============ MATKUL 1: PSE ============ -->
+        <div class="matkul-card">
+          <div class="matkul-header" onclick="toggleCard(this)">
+            <h3><span class="icon"><i class="fas fa-heartbeat"></i></span> Pembelajaran Sosial Emosional (PSE)</h3>
+            <span class="toggle-icon">▼</span>
+          </div>
+          <div class="matkul-body">
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-layer-group"></i> Refleksi 4C</div>
+              <div class="grid-4c">
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-link"></i> Connection</div>
+                  <div class="box-text">Materi PSE sangat erat kaitannya dengan peran saya sebagai calon guru
+                    Informatika. Saya menyadari bahwa mengajarkan koding dan algoritma bukan sekadar transfer kognitif,
+                    melainkan sarat akan tantangan emosional (error, debugging, frustrasi). PSE membantu saya memahami
+                    bahwa siswa butuh kesadaran diri dan manajemen diri agar tidak mudah menyerah saat menghadapi error
+                    program. Selain itu, saya menyadari keteladanan guru sangat menentukan. Sebagai guru saya harus
+                    menjadi teladan dalam mengelola emosi saat menghadapi siswa yang belum lancar menggunakan komputer.
+                  </div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-bolt"></i> Challenge</div>
+                  <div class="box-text">Tantangan terbesar yang saya hadapi adalah kesenjangan kesiapan siswa (transisi
+                    SMP ke SMK). Dari 36 siswa di Kelas X RPL, 5 siswa (14%) masuk kategori "Perlu Pendampingan
+                    Intensif" karena belum pernah memegang komputer. Sebelumnya, saya mungkin akan merasa frustrasi jika
+                    materi harus diulang berkali-kali. Namun, lewat studi kasus, saya belajar bahwa tantangan ini bukan
+                    tentang murid yang "lambat", melainkan ujian bagi regulasi emosi saya sebagai guru.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-lightbulb"></i> Concept</div>
+                  <div class="box-text">Konsep utama yang saya pelajari adalah kerangka CASEL (Kesadaran Diri, Manajemen
+                    Diri, Kesadaran Sosial, Keterampilan Relasi, dan Pengambilan Keputusan Bertanggung Jawab). Saya juga
+                    mendalami Teori Belajar Experiential (Siklus Kolb: Pengalaman Nyata, Observasi Reflektif,
+                    Konseptualisasi Abstrak, Eksperimen Aktif) sebagai jembatan untuk menanamkan PSE dalam pembelajaran
+                    Informatika. Selain itu, saya mempelajari strategi komunikasi asertif dan teknik regulasi emosi
+                    (seperti teknik STOP).</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-sync-alt"></i> Change</div>
+                  <div class="box-text">Setelah mempelajari materi ini, saya ingin melakukan perubahan konkret. Pertama,
+                    saya akan membiasakan diri melakukan asesmen diagnostik di awal pembelajaran untuk memetakan
+                    kesiapan siswa. Kedua, saya ingin menerapkan Siklus Kolb secara rutin dalam pembelajaran Informatika
+                    agar siswa mengalami langsung (misalnya lewat simulasi role-play). Ketiga, saya akan melatih
+                    regulasi emosi saya dengan teknik STOP saat kelas mulai tidak kondusif, serta menggunakan kalimat
+                    asertif alih-alih membentak.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-file-pdf"></i> PDF Refleksi LK 2 — Pembelajaran Sosial
+                Emosional</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/19p8ZWo2PVlz8MuPFaRnJpVfr1xAhI6zi/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/19p8ZWo2PVlz8MuPFaRnJpVfr1xAhI6zi/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-puzzle-piece"></i> Analisis Artefak Pembelajaran</div>
+              <div class="grid-artefak">
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-question"></i> Artefak yang Dipilih</div>
+                  <div class="box-text">Saya memilih dua artefak: (1) Lembar Kerja 2.C. Studi Kasus Karakteristik Guru
+                    Sebagai Teladan (Analisis data diagnostik Kelas X RPL); (2) Lembar Kerja 3.1 Siklus Penerapan
+                    Experiential Learning.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-star"></i> Mengapa Dipilih</div>
+                  <div class="box-text">Kedua artefak menunjukkan perjalanan pemahaman saya secara utuh. Artefak 1
+                    membuktikan saya mampu menganalisis realitas lapangan (14% siswa butuh pendampingan) dan
+                    merefleksikannya menjadi keteladanan. Artefak 2 adalah bukti nyata bagaimana saya menerjemahkan
+                    teori PSE dan Experiential Learning ke dalam praktik perancangan pembelajaran Informatika.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-check-circle"></i> Bagian Pendukung</div>
+                  <div class="box-text">Data asesmen diagnostik di Artefak 1 menunjukkan realitas kesenjangan literasi
+                    digital siswa, membuat saya sadar bahwa keteladanan guru (sabar dan tidak menyerah) adalah kunci
+                    utama. Pada Artefak 2, tabel Siklus Kolb menunjukkan bagaimana PSE diintegrasikan langsung ke
+                    aktivitas koding, membuat siswa belajar mengelola emosi saat debugging.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-paperclip"></i> PDF Artefak 1</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1XNgVbi0Svcn-7-glriSsTR4J51Y59uQc/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1XNgVbi0Svcn-7-glriSsTR4J51Y59uQc/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-paperclip"></i> PDF Artefak 2</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1zn7RgCXaRSt3dDU-W_CVWyh7sjZ0m0fB/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1zn7RgCXaRSt3dDU-W_CVWyh7sjZ0m0fB/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ MATKUL 2: PMAL ============ -->
+        <div class="matkul-card">
+          <div class="matkul-header" onclick="toggleCard(this)">
+            <h3><span class="icon"><i class="fas fa-book-reader"></i></span> Pembelajaran Mendalam dan Asesmen Lanjut
+              (PMAL)</h3>
+            <span class="toggle-icon">▼</span>
+          </div>
+          <div class="matkul-body">
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-layer-group"></i> Refleksi 4C</div>
+              <div class="grid-4c">
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-link"></i> Connection</div>
+                  <div class="box-text">Mata kuliah PMAL memiliki keterkaitan yang sangat erat dengan peran saya sebagai
+                    calon guru Informatika. Melalui mata kuliah ini, saya menyadari bahwa asesmen bukan sekadar kegiatan
+                    di akhir pembelajaran untuk memberi nilai, melainkan sebuah kompas yang menuntun saya untuk
+                    merancang pembelajaran yang tepat sejak awal. Konsep Deep Learning (pembelajaran mendalam) yang
+                    menekankan aspek berkesadaran, bermakna, dan menggembirakan juga membuka mata saya.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-bolt"></i> Challenge</div>
+                  <div class="box-text">Tantangan terbesar yang saya hadapi di mata kuliah ini adalah upaya
+                    menerjemahkan teori asesmen dan diferensiasi ke dalam praktik nyata di lapangan. Saat saya praktik
+                    di Kelas X RPL, saya menyadari bahwa mengelola kelas dengan sebaran kemampuan yang sangat lebar (14%
+                    murid butuh pendampingan intensif, sementara 50% sudah siap) bukanlah hal yang mudah. Tantangan
+                    lainnya adalah mengelola waktu agar diferensiasi LKM bertingkat bisa berjalan tanpa membuat kelas
+                    menjadi gaduh.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-lightbulb"></i> Concept</div>
+                  <div class="box-text">Konsep utama yang saya pelajari meliputi: (1) prinsip Pembelajaran Mendalam
+                    (mindful, meaningful, joyful); (2) Ragam Asesmen, mencakup Assessment for Learning, Assessment as
+                    Learning, dan Assessment of Learning; (3) Teaching at the Right Level (TaRL) yang menekankan
+                    pengelompokan fleksibel sesuai kesiapan murid; (4) pentingnya instrumen asesmen yang menggabungkan
+                    aspek kognitif dan non-kognitif; serta (5) prinsip Universal Design for Learning (UDL).</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-sync-alt"></i> Change</div>
+                  <div class="box-text">Setelah mempelajari materi ini, saya merumuskan perubahan konkret yang akan saya
+                    terapkan ke depan. Pertama, saya akan membiasakan diri melakukan asesmen diagnostik singkat di awal
+                    unit pembelajaran. Kedua, saya akan merancang LKM atau aktivitas pembelajaran yang bertingkat
+                    (dasar, menengah, tantangan). Ketiga, saya ingin lebih rutin memberikan umpan balik yang berfokus
+                    pada proses berpikir (formatif), bukan sekadar menilai benar-salah di akhir.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-file-pdf"></i> PDF Refleksi LK 2 — PMAL</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1e4T0bjFIf5S96XXYBRAalrybmAMu1riQ/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1e4T0bjFIf5S96XXYBRAalrybmAMu1riQ/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-puzzle-piece"></i> Analisis Artefak Pembelajaran</div>
+              <div class="grid-artefak">
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-question"></i> Artefak yang Dipilih</div>
+                  <div class="box-text">Laporan Lembar Kerja 3.1 Penerapan Pembelajaran Mendalam Berbasis Teaching at
+                    the Right Level (TaRL) (Pertemuan 4 – Algoritma Pencarian).</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-star"></i> Mengapa Dipilih</div>
+                  <div class="box-text">Laporan TaRL ini saya pilih karena merupakan puncak praktik dari mata kuliah
+                    PMAL. Artefak ini membuktikan bahwa saya tidak hanya memahami teori asesmen, tetapi juga mampu
+                    mengeksekusinya di kelas nyata. Di dalam laporan ini, tergambar siklus utuh seorang guru: dimulai
+                    dari membaca data asesmen diagnostik, merancang diferensiasi, menggunakan konteks lokal, hingga
+                    melakukan refleksi kritis.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-check-circle"></i> Bagian Pendukung</div>
+                  <div class="box-text">Bagian yang paling mendukung adalah tabel "Refleksi Penerapan Empat Langkah
+                    TaRL" dan tabel "Rencana Perbaikan Konkret". Di bagian refleksi, saya secara jujur mengakui
+                    kelemahan praktik saya—misalnya belum optimalnya penggunaan exit ticket. Namun, adanya Rencana
+                    Perbaikan yang spesifik menunjukkan kedewasaan saya sebagai calon guru.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-paperclip"></i> PDF Artefak Kunci</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1TEG7CYX-EGFlZIc7MLKli--J0qm0HTIL/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1TEG7CYX-EGFlZIc7MLKli--J0qm0HTIL/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ MATKUL 3: PPL MANDIRI ============ -->
+        <div class="matkul-card">
+          <div class="matkul-header" onclick="toggleCard(this)">
+            <h3><span class="icon"><i class="fas fa-chalkboard-teacher"></i></span> Praktik Pengalaman Lapangan (PPL)
+              Mandiri</h3>
+            <span class="toggle-icon">▼</span>
+          </div>
+          <div class="matkul-body">
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-layer-group"></i> Refleksi 4C</div>
+              <div class="grid-4c">
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-link"></i> Connection</div>
+                  <div class="box-text">Mata kuliah PPL Mandiri adalah muara dari seluruh teori yang saya pelajari. Jika
+                    sebelumnya saya hanya belajar pedagogi di atas kertas, di sini saya benar-benar merasakan dinamika
+                    menjadi seorang guru. Saya menyadari bahwa peran guru bukan hanya sebagai penyampai materi, tetapi
+                    juga sebagai manajer kelas, fasilitator, dan teladan. Keberhasilan pembelajaran di kelas sangat
+                    dipengaruhi oleh sistem makro sekolah.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-bolt"></i> Challenge</div>
+                  <div class="box-text">Tantangan terbesar di PPL Mandiri adalah tuntutan untuk benar-benar mandiri
+                    dalam mengambil keputusan di kelas. Saat mengajarkan materi Sequential Search dan Binary Search,
+                    saya menemukan bahwa tidak semua murid bisa mengikuti simulasi digital dengan cepat. Tantangan
+                    lainnya adalah saat mengajar secara daring (PJJ). Menjaga fokus murid melalui Google Meet dan
+                    memastikan mereka benar-benar mengerjakan tugas adalah ujian kesabaran.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-lightbulb"></i> Concept</div>
+                  <div class="box-text">Konsep utama yang saya pelajari adalah Pengelolaan Kelas dan Pembelajaran
+                    Berdiferensiasi dalam konteks nyata. Saya mendalami bagaimana menerapkan TaRL untuk mengakomodasi
+                    kesiapan murid yang berbeda, serta CRT dengan mengangkat konteks lokal (Pasar Terapung Lok Baintan).
+                    Saya juga mempraktikkan Model Pembelajaran Mendalam dan menyadari bahwa refleksi berkelanjutan
+                    adalah kunci perbaikan.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-sync-alt"></i> Change</div>
+                  <div class="box-text">Setelah melalui seluruh siklus PPL Mandiri, saya berkomitmen untuk mengubah
+                    beberapa hal. Pertama, saya akan lebih disiplin dalam manajemen waktu. Kedua, saya akan lebih sering
+                    melakukan pengecekan pemahaman secara berkala di tengah pembelajaran. Ketiga, saya akan selalu
+                    menyiapkan rencana alternatif (Plan B) yang tidak bergantung pada internet. Terakhir, saya ingin
+                    lebih memberi pendampingan khusus kepada murid yang pasif.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-file-pdf"></i> PDF Refleksi LK 2 — PPL Mandiri</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1TzdwtxrmQpHxQEAht3vgJNVsB3syIGLn/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1TzdwtxrmQpHxQEAht3vgJNVsB3syIGLn/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-puzzle-piece"></i> Analisis Artefak Pembelajaran</div>
+              <div class="grid-artefak">
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-question"></i> Artefak yang Dipilih</div>
+                  <div class="box-text">Lembar Kerja (LK) 4: Refleksi Praktik Pembelajaran Mandiri (Siklus 1) — materi
+                    Algoritma Pencarian (Sequential Search dan Binary Search).</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-star"></i> Mengapa Dipilih</div>
+                  <div class="box-text">LK 4 Siklus 1 ini saya pilih karena merupakan titik balik kemandirian saya
+                    sebagai guru. Di siklus ini, saya untuk pertama kalinya merancang dan melaksanakan pembelajaran
+                    secara utuh tanpa bimbingan intensif di dalam kelas. Artefak ini merekam bagaimana saya mencoba
+                    menerapkan teori dan merefleksikan apa yang berhasil dan belum berhasil.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-check-circle"></i> Bagian Pendukung</div>
+                  <div class="box-text">Bagian yang paling mendukung adalah "Bagian B.2 Apabila Anda akan melakukan
+                    perubahan...". Di sini saya menuliskan rencana perbaikan spesifik: memperbaiki pembagian waktu,
+                    menambahkan latihan bertahap (TaRL), mempertahankan contoh kontekstual (CRT), dan pembagian tugas
+                    kelompok yang lebih jelas.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-paperclip"></i> PDF Artefak Kunci</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/18wH0Pza8V192idjMkXlMukxls0aMVlEw/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/18wH0Pza8V192idjMkXlMukxls0aMVlEw/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ MATKUL 4: PROJEK KEPEMIMPINAN ============ -->
+        <div class="matkul-card">
+          <div class="matkul-header" onclick="toggleCard(this)">
+            <h3><span class="icon"><i class="fas fa-users-cog"></i></span> Projek Kepemimpinan</h3>
+            <span class="toggle-icon">▼</span>
+          </div>
+          <div class="matkul-body">
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-layer-group"></i> Refleksi 4C</div>
+              <div class="grid-4c">
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-link"></i> Connection</div>
+                  <div class="box-text">Mata kuliah Projek Kepemimpinan memberikan makna baru bagi saya tentang esensi
+                    peran guru. Jika selama ini saya menganggap guru hanya berperan di dalam kelas, proyek "Workshop
+                    Pelatihan Guru Berbantuan ChatGPT" di SMPN 2 Banjarmasin membuktikan sebaliknya. Guru sejati adalah
+                    pemimpin pembelajaran yang mampu melihat permasalahan di ekosistem sekitarnya dan tergerak untuk
+                    memberikan solusi nyata.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-bolt"></i> Challenge</div>
+                  <div class="box-text">Tantangan terbesar dalam proyek ini adalah mengubah teori kepemimpinan menjadi
+                    eksekusi nyata di lapangan. Sebagai Ketua Pelaksana (Project Leader), saya dituntut untuk memimpin 5
+                    orang anggota tim dengan latar belakang dan gaya kerja yang berbeda. Saya harus memastikan seluruh
+                    divisi (acara, logistik, publikasi, sekretaris) berjalan seiring, serta menghadapi negosiasi dengan
+                    pihak sekolah dan pengelolaan anggaran yang terbatas.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-lightbulb"></i> Concept</div>
+                  <div class="box-text">Konsep utama yang saya pelajari adalah Kepemimpinan Pembelajaran, manajemen
+                    proyek, dan kolaborasi. Saya mendalami cara menyusun SMART Goals agar tujuan proyek terukur,
+                    menggunakan analisis Circle of Viewpoints dan Fishbone untuk memetakan masalah, serta pentingnya
+                    empati dan komunikasi asertif dalam memimpin. Seorang pemimpin bukanlah orang yang mengambil semua
+                    pekerjaan, melainkan orang yang mampu mendistribusikan tugas sesuai keahlian anggota.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-sync-alt"></i> Change</div>
+                  <div class="box-text">Setelah proyek ini tuntas dilaksanakan, saya berkomitmen untuk mengubah cara
+                    pandang saya ke depan. Pertama, saya tidak ingin menjadi guru yang hanya terkurung di ruang kelas;
+                    saya ingin aktif berkontribusi dalam komunitas belajar guru di sekolah tempat saya mengajar nanti.
+                    Kedua, saya ingin lebih proaktif berbagi praktik baik, serta terus melatih soft skill kepemimpinan
+                    dan manajemen konflik.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-file-pdf"></i> PDF Refleksi LK 2 — Projek Kepemimpinan</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1aXo2KwzD4EiPivCruT8AyoReLBFisfRs/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1aXo2KwzD4EiPivCruT8AyoReLBFisfRs/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-puzzle-piece"></i> Analisis Artefak Pembelajaran</div>
+              <div class="grid-artefak">
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-question"></i> Artefak yang Dipilih</div>
+                  <div class="box-text">Proposal Kegiatan Workshop Pelatihan Guru dalam Menyusun Perangkat Ajar
+                    Kurikulum Merdeka Berbantuan ChatGPT.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-star"></i> Mengapa Dipilih</div>
+                  <div class="box-text">Proposal ini saya pilih karena merupakan representasi utuh dari kompetensi
+                    kepemimpinan saya. Artefak ini bukan sekadar dokumen administratif, melainkan hasil analisis
+                    kebutuhan yang mendalam. Di dalamnya saya menuangkan pemikiran strategis: mulai dari latar belakang
+                    masalah, penentuan tujuan SMART, struktur tim beserta job description, hingga rancangan anggaran
+                    biaya.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-check-circle"></i> Bagian Pendukung</div>
+                  <div class="box-text">Bagian yang paling mendukung refleksi saya adalah BAB II: Profil Tim Pelaksana.
+                    Di BAB II, saya melihat bagaimana peran Ketua/Project Leader diuji. Saya belajar bahwa tugas saya
+                    adalah memastikan roda organisasi berputar, bukan mengambil alih pekerjaan anggota. Saya
+                    memposisikan diri sebagai pengawas, sementara sekretaris mengurus administrasi dan bendahara
+                    mengurus dana.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-paperclip"></i> PDF Artefak Kunci</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/11WC7edIUTcp2Jsq7cTK2U8Cznucuk9kQ/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/11WC7edIUTcp2Jsq7cTK2U8Cznucuk9kQ/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ MATKUL 5: INOVASI LAHAN BASAH ============ -->
+        <div class="matkul-card">
+          <div class="matkul-header" onclick="toggleCard(this)">
+            <h3><span class="icon"><i class="fas fa-seedling"></i></span> Inovasi Pendidikan di Lahan Basah</h3>
+            <span class="toggle-icon">▼</span>
+          </div>
+          <div class="matkul-body">
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-layer-group"></i> Refleksi 4C</div>
+              <div class="grid-4c">
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-link"></i> Connection</div>
+                  <div class="box-text">Mata kuliah ini membuka mata saya bahwa Kalimantan Selatan, dengan hamparan
+                    lahan basah dan rawa gambutnya, adalah "kelas raksasa" yang luar biasa. Sebelumnya, saya berpikir
+                    bahwa materi ekosistem atau analisis data hanya bisa diajarkan melalui buku teks. Namun, melalui
+                    observasi lapangan, saya menyadari bahwa peran guru adalah menjadi jembatan antara kurikulum dan
+                    realitas hidup murid.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-bolt"></i> Challenge</div>
+                  <div class="box-text">Tantangan terbesar saya adalah menerjemahkan observasi lapangan yang rumit
+                    (seperti masalah banjir tahunan dan kebakaran lahan) menjadi sebuah desain pembelajaran yang
+                    terstruktur. Di sini saya ditantang untuk meracik berbagai pendekatan sekaligus: menggunakan Model
+                    Kemp sebagai kerangka, PjBL sebagai model, serta mengintegrasikan TaRL, PSE, dan Deep Learning.
+                    Menyatukan semua "bumbu" pedagogi ini adalah tantangan berpikir sistematis.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-lightbulb"></i> Concept</div>
+                  <div class="box-text">Konsep utama yang saya pelajari adalah Desain Pembelajaran Inovatif Berbasis
+                    Lingkungan, khususnya Model Kemp yang bersifat fleksibel dan siklus. Saya juga mempelajari cara
+                    merancang langkah-langkah inovasi (dari analisis CP hingga tindak lanjut), karakteristik ekosistem
+                    rawa gambut, hingga integrasi teknologi dalam menganalisis data lingkungan. Saya memahami bahwa
+                    inovasi adalah mengubah cara murid belajar.</div>
+                </div>
+                <div class="box-4c">
+                  <div class="box-head"><i class="fas fa-sync-alt"></i> Change</div>
+                  <div class="box-text">Setelah mempelajari mata kuliah ini, saya berkomitmen untuk mengubah gaya
+                    mengajar saya. Pertama, saya akan sebisa mungkin membawa murid keluar kelas atau menghadirkan
+                    konteks lokal (terutama lahan basah) ke dalam materi pelajaran saya. Kedua, saya akan lebih sering
+                    menggunakan PjBL agar murid menghasilkan karya nyata. Ketiga, saya ingin membiasakan diri mendesain
+                    pembelajaran menggunakan Model Kemp yang fleksibel.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-file-pdf"></i> PDF Refleksi LK 2 — Inovasi Lahan Basah</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1Gcy42nC46QaqrgeKIi5lXoW0JXr5mrcB/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1Gcy42nC46QaqrgeKIi5lXoW0JXr5mrcB/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+
+            <div class="section-block">
+              <div class="section-title-block"><i class="fas fa-puzzle-piece"></i> Analisis Artefak Pembelajaran</div>
+              <div class="grid-artefak">
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-question"></i> Artefak yang Dipilih</div>
+                  <div class="box-text">Dokumen Ujian Tengah Semester (UTS) berupa Modul Ajar Pembelajaran Mendalam
+                    dengan materi "Analisis Data dan Visualisasi Informasi Digital" menggunakan studi kasus kekeringan
+                    rawa gambut.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-star"></i> Mengapa Dipilih</div>
+                  <div class="box-text">Dokumen UTS ini saya pilih karena merupakan representasi paling utuh dari
+                    kompetensi yang saya pelajari. Artefak ini tidak sekadar berisi teori, melainkan rancangan
+                    pembelajaran nyata yang mengintegrasikan Model Kemp, PjBL, TaRL, PSE, Deep Learning, dan TPACK. Ini
+                    membuktikan bahwa saya mampu menerjemahkan isu lingkungan lokal menjadi pengalaman belajar
+                    Informatika yang kontekstual.</div>
+                </div>
+                <div class="box-artefak">
+                  <div class="box-head"><i class="fas fa-check-circle"></i> Bagian Pendukung</div>
+                  <div class="box-text">Bagian yang paling mendukung adalah "C. Penjelasan Integrasi Pendekatan" dan "G.
+                    Sintak Model (PjBL)". Di bagian C, saya menjelaskan implementasi Deep Learning dan TaRL. Di bagian
+                    G, saya merancang alur kegiatan murid mengolah data cuaca riil (Google Sheets) dan menuangkannya ke
+                    dalam infografis (Canva).</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdf-block">
+              <div class="pdf-block-title"><i class="fas fa-paperclip"></i> PDF Artefak Kunci</div>
+              <div class="pdf-embed-wrapper">
+                <iframe src="https://drive.google.com/file/d/1YyZzQYUwFtQV529TdhQEBYAz6CwK20qp/preview"
+                  allow="autoplay"></iframe>
+              </div>
+              <div class="pdf-actions">
+                <a href="https://drive.google.com/file/d/1YyZzQYUwFtQV529TdhQEBYAz6CwK20qp/view?usp=sharing"
+                  target="_blank" class="pdf-btn">
+                  <i class="fas fa-external-link-alt"></i> Buka di Tab Baru
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 1.5rem; padding: 1rem; background: #f1f5f9; border-radius: 16px; font-size: 0.85rem; color: #475569; text-align: center; border: 1px solid #e2edf2;">
+          <i class="fas fa-book-open" style="color: #1e4a6e;"></i>
+          Refleksi 4C, PDF refleksi, dan analisis artefak di atas merupakan hasil refleksi pengalaman belajar 5 mata
+          kuliah semester II sebagai calon guru profesional.
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ PAGE: KONTAK ============ -->
+  <div id="page-kontak" class="page">
+    <div
+      style="background: linear-gradient(120deg, #f1f5f9 0%, #e6edf4 100%); padding: 3.5rem 0; border-bottom: 1px solid #e0e7ef;">
+      <div class="container" style="text-align: center;">
+        <h1 style="font-size: 2.6rem; font-weight: 800; color: #0c4a6e; margin-bottom: 0.5rem;">Hubungi & Kolaborasi
+        </h1>
+        <p style="font-size: 1.05rem; color: #475569; max-width: 650px; margin: 0 auto;">Terbuka untuk diskusi seputar
+          PPG, media pembelajaran, atau pengembangan web edukasi.</p>
+        <div style="margin-top: 1.2rem;">
+          <a href="#" data-page="home" class="btn btn-outline page-link" style="font-size: 0.85rem;"><i
+              class="fas fa-home"></i> Kembali ke Beranda</a>
+        </div>
+      </div>
+    </div>
+    <section class="page-section" style="background: white;">
+      <div class="container">
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 900px; margin: 0 auto;">
+          <div
+            style="flex:1; min-width: 200px; background: #f8fafc; border-radius: 2rem; padding: 1.8rem; border: 1px solid #e2edf2; text-align: center;">
+            <i class="fas fa-envelope" style="font-size: 2.5rem; color:#1e4a6e;"></i>
+            <h3 style="margin: 0.8rem 0 0.3rem;">Email</h3>
+            <p style="font-size: 0.88rem;">hidayatullahsyarif343@gmail.com</p>
+          </div>
+          <div
+            style="flex:1; min-width: 200px; background: #f8fafc; border-radius: 2rem; padding: 1.8rem; border: 1px solid #e2edf2; text-align: center;">
+            <i class="fab fa-linkedin" style="font-size: 2.5rem; color:#1e4a6e;"></i>
+            <h3 style="margin: 0.8rem 0 0.3rem;">LinkedIn</h3>
+            <p style="font-size: 0.88rem;">Syarif Hidayatullah</p>
+          </div>
+          <div
+            style="flex:1; min-width: 200px; background: #f8fafc; border-radius: 2rem; padding: 1.8rem; border: 1px solid #e2edf2; text-align: center;">
+            <i class="fab fa-instagram" style="font-size: 2.5rem; color:#1e4a6e;"></i>
+            <h3 style="margin: 0.8rem 0 0.3rem;">Instagram</h3>
+            <p style="font-size: 0.88rem;">@syarifmhmd</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Refleksi Pengalaman Belajar Mata Kuliah Semester II | Universitas Lambung Mangkurat</p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem;">"Menjadi guru adalah panggilan jiwa untuk mencerdaskan dan
+        menginspirasi generasi penerus bangsa." — Syarif Hidayatullah</p>
+    </div>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const pages = {
+      home: document.getElementById('page-home'),
+      identitas: document.getElementById('page-identitas'),
+      refleksi: document.getElementById('page-refleksi'),
+      kontak: document.getElementById('page-kontak')
+    };
+
+    function navigateTo(pageId) {
+      Object.values(pages).forEach(page => page.classList.remove('active-page'));
+      if (pages[pageId]) pages[pageId].classList.add('active-page');
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.dataset.page === pageId) link.classList.add('active');
+      });
+      document.getElementById('navLinks').classList.remove('open');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const pageId = this.dataset.page;
+        if (pageId) navigateTo(pageId);
+      });
+    });
+
+    document.querySelectorAll('.page-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const pageId = this.dataset.page;
+        if (pageId) navigateTo(pageId);
+      });
+    });
+
+    const mobileBtn = document.getElementById('mobileMenu');
+    const navLinksContainer = document.getElementById('navLinks');
+    mobileBtn.addEventListener('click', function () {
+      navLinksContainer.classList.toggle('open');
+    });
+
+    function toggleCard(header) {
+      const body = header.nextElementSibling;
+      header.classList.toggle('collapsed');
+      body.classList.toggle('hidden');
+    }
+
+    document.querySelectorAll('.matkul-body').forEach(body => {
+      body.classList.remove('hidden');
+    });
+    document.querySelectorAll('.matkul-header').forEach(header => {
+      header.classList.remove('collapsed');
+    });
+
+    // SLIDER LPTK
+    let slideIndexLptk = 0;
+    const slidesLptk = document.querySelectorAll('#sliderLptk .slider-images img');
+    const dotsLptk = document.querySelectorAll('#dotsLptk span');
+    function showSlideLptk(index) {
+      if (!slidesLptk.length) return;
+      if (index >= slidesLptk.length) slideIndexLptk = 0;
+      if (index < 0) slideIndexLptk = slidesLptk.length - 1;
+      const slider = document.querySelector('#sliderLptk .slider-images');
+      if (slider) slider.style.transform = 'translateX(-' + (slideIndexLptk * 100) + '%)';
+      dotsLptk.forEach((dot, i) => dot.classList.toggle('active', i === slideIndexLptk));
+    }
+    function slideLptk(direction) { slideIndexLptk += direction; showSlideLptk(slideIndexLptk); }
+    function goToSlideLptk(index) { slideIndexLptk = index; showSlideLptk(slideIndexLptk); }
+
+    // SLIDER SEKOLAH
+    let slideIndexSekolah = 0;
+    const slidesSekolah = document.querySelectorAll('#sliderSekolah .slider-images img');
+    const dotsSekolah = document.querySelectorAll('#dotsSekolah span');
+    function showSlideSekolah(index) {
+      if (!slidesSekolah.length) return;
+      if (index >= slidesSekolah.length) slideIndexSekolah = 0;
+      if (index < 0) slideIndexSekolah = slidesSekolah.length - 1;
+      const slider = document.querySelector('#sliderSekolah .slider-images');
+      if (slider) slider.style.transform = 'translateX(-' + (slideIndexSekolah * 100) + '%)';
+      dotsSekolah.forEach((dot, i) => dot.classList.toggle('active', i === slideIndexSekolah));
+    }
+    function slideSekolah(direction) { slideIndexSekolah += direction; showSlideSekolah(slideIndexSekolah); }
+    function goToSlideSekolah(index) { slideIndexSekolah = index; showSlideSekolah(slideIndexSekolah); }
+
+    setInterval(function () { if (document.querySelector('#sliderLptk')) slideLptk(1); }, 4000);
+    setInterval(function () { if (document.querySelector('#sliderSekolah')) slideSekolah(1); }, 4000);
+
+    navigateTo('home');
+  </script>
+</body>
+
+</html>
